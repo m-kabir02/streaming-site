@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-items {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%; /* Adjust width as per container */
+    height: 300px; /* Set height according to design preference */
+    object-fit: cover; /* Crop the image to fit the set width and height */
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+
+.filter {
+    padding: 20px;
+    text-align: left;
+}
+
+#filter-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#filter-options {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+#filter-options label {
+    display: inline-block; /* Make each label take a new line */
+    margin-right: 10px; /* Space between checkboxes */
+}
+
+.hidden {
+    display: none;
+}
+
+#apply-filters {
+    background-color: black ; /* white button color */
+    color: #fff; /* black text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Same padding as the filter button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 10px; /* Space between filter options and the button */
+    border-radius: 4px; /* Rounded corners */
+    display: block; /* Ensures it takes a new line if needed */
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.movie-item {
+    text-align: center;
+}
+
+.movie-item img {
+    width: 100%; /* Set a fixed width */
+    height: 250px; /* Set a fixed height */
+    object-fit: fill; /* Crop image to fit the container */
+}
+
+.movie-item h3 {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #fff;
+}
